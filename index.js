@@ -38,3 +38,22 @@ let countMin = (arr) => {
   }
   return min
 }
+
+let countMax = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (isNumber(arr[i])) {
+      var max = arr[i]
+      break
+    } else {
+      max = arr[i + 1]
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (isNumber(arr[i])) {
+      if (max < arr[i]) {
+        max = arr[i]
+      }
+    }
+  }
+  return max
+}
