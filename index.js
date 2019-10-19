@@ -1,4 +1,4 @@
-let isNumber = (element) => {
+const isNumber = (element) => {
   if (element !== null) {
     if (isNaN(element)) {
     } else {
@@ -10,7 +10,7 @@ let isNumber = (element) => {
   }
 }
 
-let countSum = (arr) => {
+const countSum = (arr) => {
   let sum = 0
   for (let i = 0; i < arr.length; i++) {
     if (isNumber(arr[i])) {
@@ -20,7 +20,7 @@ let countSum = (arr) => {
   return sum
 }
 
-let countMin = (arr) => {
+const countMin = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (isNumber(arr[i])) {
       var min = arr[i]
@@ -39,7 +39,7 @@ let countMin = (arr) => {
   return min
 }
 
-let countMax = (arr) => {
+const countMax = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (isNumber(arr[i])) {
       var max = arr[i]
