@@ -57,3 +57,12 @@ let countMax = (arr) => {
   }
   return max
 }
+
+let someArr = [NaN, NaN,'', undefined, 0, 19, -2, '3gh', 52, Infinity, null, '', '    ', 'l3']
+let resultSum = countSum(someArr)
+let resultMax = countMax(someArr)
+let resultMin = countMin(someArr)
+
+console.log('sum = ', resultSum)
+console.log('max = ', resultMax)
+console.log('min = ', resultMin)
