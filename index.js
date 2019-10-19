@@ -19,3 +19,22 @@ let countSum = (arr) => {
   }
   return sum
 }
+
+let countMin = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (isNumber(arr[i])) {
+      var min = arr[i]
+      break
+    } else {
+      min = arr[i + 1]
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (isNumber(arr[i])) {
+      if (min > arr[i]) {
+        min = arr[i]
+      }
+    }
+  }
+  return min
+}
